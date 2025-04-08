@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike - The Mayor of Greenpoint</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    /* Photo Gallery Styles */
+    .gallery {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .photo {
+      width: 225px;
+      height: 300px;
+      /* 3:4 portrait ratio */
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      flex: 0 0 auto;
+    }
+
+    .photo:hover {
+      transform: translateY(-5px);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* About Section Styles */
+    .about {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .bio {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .email {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .email:hover {
+      background-color: #3e8e41;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo {
+        width: 225px;
+        height: 300px;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 900px) and (min-width: 769px) {
+      .gallery {
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .photo {
+        width: 200px;
+        height: 267px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mike</h1>
+    <div class="tagline">The Mayor of Greenpoint</div>
+  </header>
+
+  <div class="container">
+    <div class="gallery">
+
+      <div class="photo">
+        <img src="IMG_1083.jpeg" alt="Mike around Greenpoint">
+      </div>
+      <div class="photo">
+        <img src="/IMG_3692.jpeg" alt="Mike with neighbors">
+      </div>
+      <div class="photo">
+        <img src="2014-05-31 20.53.18.jpeg" alt="Mayor Mike in action">
+      </div>
+    </div>
+
+    <section class="about">
+      <h2>About Mike</h2>
+      <div class="bio">
+
+        <p>Mike has been a fixture in the Greenpoint community for over 42 years. Known by just about everyone in the
+          neighborhood, he's earned his unofficial title as the "Mayor of Greenpoint" through his friendly nature,
+          helpfulness, and deep knowledge of the area.</p>
+        <br>
+        <p>Whether you need restaurant recommendations, where to get a bottle of High Life, or just want to know the
+          history
+          behind that quirky building on the corner, Mike is your go-to person. His passion for Greenpoint is matched
+          only by his genuine love for the people who call it home. Unless of course you are a a bag of dicks that
+          doesn't know how to drive</p>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get In Touch</h2>
+      <p>Need local advice? Looking to connect with other Greenpoint residents? Mike is just an email away!</p>
+
+      <a href="mailto:🍆@richardschuster.com" class="email">Email the Mayor</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy;
+    <script>document.write(new Date().getFullYear())</script> MayorOfGreenpoint.com | This site is purely for fun and
+    Mike is not actually the mayor of Greenpoint, yet.
+  </footer>
+</body>
+
+</html>
